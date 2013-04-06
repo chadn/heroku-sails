@@ -27,6 +27,8 @@ Short version:
 If you have not yet, create heroku account and install [heroku 
 toolbelt](https://toolbelt.heroku.com/)
 
+Then create a heroku app.  I created `heroku-sails` in the following example:
+
 	$ heroku apps:create heroku-sails
 	Creating heroku-sails... done, region is us
 	http://heroku-sails.herokuapp.com/ | git@heroku.com:heroku-sails.git
@@ -50,3 +52,4 @@ Deploy!
 
 	$ git push heroku master
 
+Now view your new app in your browser.
