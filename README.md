@@ -22,6 +22,13 @@ toolbelt](https://toolbelt.heroku.com/)
 	http://heroku-sails.herokuapp.com/ | git@heroku.com:heroku-sails.git
 	Git remote heroku added
 
+Add mongo db 
+
+	$ heroku addons:add mongolab:starter
+	Adding mongolab:starter on heroku-sails... done, v3 (free)
+	Welcome to MongoLab.  Your new database is ready for use.  Please consult the MongoLab Add-on Admin UI for more information and useful management tools.
+	Use `heroku addons:docs mongolab:starter` to view documentation.
+
 Optionally add papertrail, lets you view logs from a browser:
 
 	$ heroku addons:add papertrail
