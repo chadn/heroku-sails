@@ -3,6 +3,16 @@
 This is a simple example of getting the new [sails.js](http://sailsjs.com/)
 code running on heroku using mongodb as its database. 
 
+"Sails automatically builds a RESTful JSON API for your models. And here's the thing,
+it supports HTTP and WebSockets. By default, for every controller you create, 
+you get the basic CRUD operations created automatically."
+
+http://heroku-sails.herokuapp.com/user
+http://heroku-sails.herokuapp.com/user/create?name=Chad
+http://heroku-sails.herokuapp.com/user/update/2?name=Sam
+
+More examples at [sails.js](http://sailsjs.com/).
+
 ### Setup
 
 Could not be easier to setup your own API server using sails.js, node, mongodb, and heroku.
