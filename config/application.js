@@ -1,10 +1,10 @@
 module.exports = {
 	
 	// Name of the application (used as default <title>)
-	appName: "Sails Application",
+	appName: "Chad Sails Application",
 
 	// Port this Sails application will live on
-	port: 1337,
+	port: process.env.PORT || 1337,
 
 	// The environment the app is deployed in 
 	// (`development` or `production`)
@@ -24,7 +24,7 @@ module.exports = {
 	// - verbose
 	//
 	log: {
-		level: 'info'
+		level: 'verbose'
 	}
 
 };
