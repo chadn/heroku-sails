@@ -7,9 +7,9 @@ code running on heroku using mongodb as its database.
 it supports HTTP and WebSockets. By default, for every controller you create, 
 you get the basic CRUD operations created automatically."
 
-http://heroku-sails.herokuapp.com/user
-http://heroku-sails.herokuapp.com/user/create?name=Chad
-http://heroku-sails.herokuapp.com/user/update/2?name=Sam
+* http://heroku-sails.herokuapp.com/user
+* http://heroku-sails.herokuapp.com/user/create?name=Chad
+* http://heroku-sails.herokuapp.com/user/update/51605c1d9491790200000001?name=Sam
 
 More examples at [sails.js](http://sailsjs.com/).
 
