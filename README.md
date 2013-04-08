@@ -53,3 +53,6 @@ Deploy!
 	$ git push heroku master
 
 Now view your new app in your browser.
+
+
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/4931c91b33d5ace57a560b8603f28f16 "githalytics.com")](http://githalytics.com/chadn/heroku-sails)
