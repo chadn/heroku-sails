@@ -6,11 +6,8 @@
 module.exports.policies = {
 
 	// Default policy (allow public access)
-	//'*': true
+	'*': true
 
-	// Enable CORS via express middleware
-	'*': 'cors'
-	
 	/** Example mapping: 
 	someController: {
 

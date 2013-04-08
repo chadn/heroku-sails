@@ -14,6 +14,18 @@ module.exports = {
 	// The downside?  Harder to debug, and the server takes longer to start.
 	environment: 'development',
 
+	express: { 
+		customMiddleware: function (app) {
+			app.use(function(req, res, next) {
+				// Enable CORS support, set headers to allow cross domain
+				res.header('Access-Control-Allow-Origin', '*');
+				res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+				res.header('Access-Control-Allow-Headers', 'Content-Type');
+				next();
+			});
+		}
+	},
+
 	// Logger
 	// Valid `level` configs:
 	// 
