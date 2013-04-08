@@ -6,8 +6,17 @@
 module.exports.policies = {
 
 	// Default policy (allow public access)
-	'*': true
+	//'*': true
 
+	// Enable CORS via express middleware
+	'*': function (req,res,next) {
+		// set headers to allow cross domain
+		res.header('Access-Control-Allow-Origin', '*');
+		res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+		res.header('Access-Control-Allow-Headers', 'Content-Type');
+		next();
+	}
+	
 	/** Example mapping: 
 	someController: {
 
