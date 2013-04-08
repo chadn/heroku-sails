@@ -9,13 +9,7 @@ module.exports.policies = {
 	//'*': true
 
 	// Enable CORS via express middleware
-	'*': function (req,res,next) {
-		// set headers to allow cross domain
-		res.header('Access-Control-Allow-Origin', '*');
-		res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-		res.header('Access-Control-Allow-Headers', 'Content-Type');
-		next();
-	}
+	'*': 'cors'
 	
 	/** Example mapping: 
 	someController: {
