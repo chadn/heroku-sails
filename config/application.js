@@ -1,3 +1,6 @@
+
+var authenKey = require('../lib/authenKey');
+
 module.exports = {
 	
 	// Name of the application (used as default <title>)
@@ -16,6 +19,9 @@ module.exports = {
 
 	express: { 
 		customMiddleware: function (app) {
+			
+			app.use(authenKey.expressMiddleware); // calls checkAuthorizationKey
+			
 			app.use(function(req, res, next) {
 				// Enable CORS support, set headers to allow cross domain
 				res.header('Access-Control-Allow-Origin', '*');

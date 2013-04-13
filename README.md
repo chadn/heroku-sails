@@ -8,8 +8,9 @@ it supports HTTP and WebSockets. By default, for every controller you create,
 you get the basic CRUD operations created automatically."
 
 * http://heroku-sails.herokuapp.com/user
-* http://heroku-sails.herokuapp.com/user/create?name=Chad
-* http://heroku-sails.herokuapp.com/user/update/51605c1d9491790200000001?name=Sam
+* https://heroku-sails.herokuapp.com/APIKEY/user
+* https://heroku-sails.herokuapp.com/APIKEY/user/create?name=Chad
+* https://heroku-sails.herokuapp.com/APIKEY/user/update/51605c1d9491790200000001?name=Sam
 
 More examples at [sails.js](http://sailsjs.com/).
 
@@ -34,12 +35,23 @@ Then create a heroku app.  I created `heroku-sails` in the following example:
 	http://heroku-sails.herokuapp.com/ | git@heroku.com:heroku-sails.git
 	Git remote heroku added
 
+
 Add mongo db 
 
 	$ heroku addons:add mongolab:starter
 	Adding mongolab:starter on heroku-sails... done, v3 (free)
 	Welcome to MongoLab.  Your new database is ready for use.  Please consult the MongoLab Add-on Admin UI for more information and useful management tools.
 	Use `heroku addons:docs mongolab:starter` to view documentation.
+
+
+Optionally set the api key. If you don't, key check will be skipped and anyone can created/edit.
+Note that we what you set here is what is sent in URL.  For more on this authentication,
+[Read lib/authenkey.js](lib/authenkey.js)
+
+	$ heroku config:set APPROVED_API_KEY=APIKEY
+	Setting config vars and restarting heroku-sails... done
+	APPROVED_API_KEY: APIKEY
+
 
 Optionally add papertrail, lets you view logs from a browser:
 
