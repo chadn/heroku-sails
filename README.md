@@ -46,7 +46,7 @@ Add mongo db
 
 Optionally set the api key. If you don't, key check will be skipped and anyone can created/edit.
 Note that we what you set here is what is sent in URL.  For more on this authentication,
-[Read lib/authenkey.js](lib/authenkey.js)
+[Read lib/authenKey.js](lib/authenKey.js)
 
 	$ heroku config:set APPROVED_API_KEY=APIKEY
 	Setting config vars and restarting heroku-sails... done
