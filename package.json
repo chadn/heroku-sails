@@ -1,8 +1,8 @@
 {
     "name": "heroku-sails",
-    "private": true,
-    "version": "0.0.0",
-    "description": "a Sails application",
+    "version": "0.0.1",
+    "description": "a Sails application running on Heroku",
+    "main": ".app.js",
     "dependencies": {
         "sails": "0.8.895"
     },
@@ -13,8 +13,10 @@
     "engines": {
       "node": "0.8.x"
     },
-    "main": ".app.js",
-    "repository": "",
-    "author": "",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/chadn/heroku-sails.git"
+    },
+    "author": "Chad Norwood <chad@chadnorwood.com>",
     "license": "MIT"
 }

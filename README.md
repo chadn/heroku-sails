@@ -14,7 +14,7 @@ you get the basic CRUD operations created automatically."
 
 More examples at [sails.js](http://sailsjs.com/).
 
-### Setup
+## Setup
 
 Could not be easier to setup your own API server using sails.js, node, mongodb, and heroku.
 
@@ -65,6 +65,10 @@ Deploy!
 	$ git push heroku master
 
 Now view your new app in your browser.
+
+## Contact
+
+For questions or custom work, please contact chad@chadnorwood.com
 
 
 [![githalytics.com alpha](https://cruel-carlota.pagodabox.com/4931c91b33d5ace57a560b8603f28f16 "githalytics.com")](http://githalytics.com/chadn/heroku-sails)
