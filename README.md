@@ -38,11 +38,11 @@ Then create a heroku app.  I created `heroku-sails` in the following example:
 
 Add mongo db 
 
-	$ heroku addons:add mongolab:starter
-	Adding mongolab:starter on heroku-sails... done, v3 (free)
-	Welcome to MongoLab.  Your new database is ready for use.  Please consult the MongoLab Add-on Admin UI for more information and useful management tools.
-	Use `heroku addons:docs mongolab:starter` to view documentation.
-
+	$ heroku addons:add mongolab:sandbox
+	Adding mongolab:sandbox on goargue-sails... done, v3 (free)
+	Welcome to MongoLab.  Your new subscription is being created and will be available shortly.  Please consult the MongoLab Add-on Admin UI to check on its progress.
+	Use `heroku addons:docs mongolab` to view documentation.
+	
 
 Optionally set the api key. If you don't, key check will be skipped and anyone can created/edit.
 Note that we what you set here is what is sent in URL.  For more on this authentication,
