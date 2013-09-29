@@ -39,7 +39,7 @@ Then create a heroku app.  I created `heroku-sails` in the following example:
 Add mongo db 
 
 	$ heroku addons:add mongolab:sandbox
-	Adding mongolab:sandbox on goargue-sails... done, v3 (free)
+	Adding mongolab:sandbox on heroku-sails... done, v3 (free)
 	Welcome to MongoLab.  Your new subscription is being created and will be available shortly.  Please consult the MongoLab Add-on Admin UI to check on its progress.
 	Use `heroku addons:docs mongolab` to view documentation.
 	
